@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PCPulse</string>
+    <string name="wlc">welcome to PCPulse</string>
+    <string name="msg">Do you have an account ? if not register here</string>
+    <string name="wlcU">Welcome to user page </string>
+    <string name="wlcAD">Welcome to admin page</string>
+    <string name="enUsr">Enter Your User ID</string>
+    <string name="enPass">Enter Your Password</string>
+    <string name="enNu">Enter Your Number</string>
+    <string name="enD">Enter Your Date of birth </string>
+
+</resources>
