@@ -8,5 +8,14 @@
     <string name="enPass">Enter Your Password</string>
     <string name="enNu">Enter Your Number</string>
     <string name="enD">Enter Your Date of birth </string>
+    <string name="regw">Welcome to
+            Pc Pluse </string>
+    <string name="regCr">Create an account </string>
+    <string name="enFN">Enter Your First Name</string>
+    <string name="enLN">Enter Your Surname Name</string>
+    <string name="enph">Enter Your Phone number </string>
+    <string name="enCpass">confirm your password </string>
+
+
 
 </resources>
