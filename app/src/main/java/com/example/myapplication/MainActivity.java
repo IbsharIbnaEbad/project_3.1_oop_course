@@ -28,10 +28,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btnreg, btnlog;
-      //  edtid = findViewById(R.id.edtid);
-        //edtpass = findViewById(R.id.edtpass);
+        EditText edtid,edtpass;
+       edtid = findViewById(R.id.edtid);
+        edtpass = findViewById(R.id.edtpass);
         btnlog = findViewById(R.id.btnlog);
         btnreg = findViewById(R.id.btnreg);
+        Pcdata pcdata =Pcdata.getDB(this);
+
 
 
         btnlog.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent inext;//1
                 inext = new Intent (MainActivity.this, register.class);//2
                 //1 2 line jekuno jaygay dewa jay doesnt matter but start activy btn click er bitore likhte hoy
+                 String id=edtid.getText().toString();
+                 String pass=edtpass.getText().toString();
+                 pcdata.userinfoDao().adduser(
+                         new usersinfo(id ,pass)
+                 );
 
                 startActivity(inext);
             }

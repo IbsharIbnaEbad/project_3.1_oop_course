@@ -11,11 +11,10 @@
     <string name="regw">Welcome to
             Pc Pluse </string>
     <string name="regCr">Create an account </string>
-    <string name="enFN">Enter Your First Name</string>
-    <string name="enLN">Enter Your Surname Name</string>
-    <string name="enph">Enter Your Phone number </string>
+    <string name="enFN">First Name</string>
+    <string name="enSN">Surname Name</string>
+    <string name="enph">Phone number </string>
     <string name="enCpass">confirm your password </string>
-
 
 
 </resources>

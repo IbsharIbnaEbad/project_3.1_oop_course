@@ -5,71 +5,92 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-
     tools:context=".register">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/regw"
-        android:textSize="25sp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="70dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="9dp"
-        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:text="@string/regCr"
         android:textColor="@color/black"
-        android:fontFamily=""
-
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:src="@drawable/img_computer" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/wlc"
-        android:textColor="#0FD3CC"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="@string/regw"
+        android:textColor="@color/black"
         android:textSize="30sp"
-        android:textStyle="bold"
+        android:textStyle="bold" />
 
-        />
 
     <EditText
-        android:id="@+id/edtid"
+
+        android:id="@+id/edtfn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="@string/enUsr"
+        android:hint="@string/enFN"
         android:inputType="text" />
+
+    <EditText
+
+        android:id="@+id/edtsn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/enSN"
+        android:inputType="text" />
+
+    <EditText
+
+        android:id="@+id/edtphn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+
+        android:hint="@string/enph"
+        android:inputType="phone" />
 
     <EditText
 
         android:id="@+id/edtpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/enPass"
         android:inputType="number"
 
         />
 
-    <Button
-        android:id="@+id/btnlog"
+    <EditText
+        android:id="@+id/edtrpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#2196F3"
-        android:text="login "
-        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/enCpass"
+        android:inputType="number" />
 
-
-        />
 
     <Button
-        android:id="@+id/btnreg"
+        android:id="@+id/btncrtreg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#2196F3"
         android:text="Register "
         android:textSize="20sp" />
