@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:padding="10dp" >
+            android:padding="8dp" >
 
         <ImageView
             android:layout_width="100dp"
@@ -42,6 +42,7 @@
                 android:id="@+id/item1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="hp"
                 android:textSize="20sp" />
 
