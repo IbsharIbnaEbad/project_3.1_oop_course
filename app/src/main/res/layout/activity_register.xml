@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@drawable/img_background"
+    android:backgroundTintMode="src_over"
     tools:context=".register">
 
     <TextView
@@ -14,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="casual"
         android:text="@string/regCr"
         android:textColor="@color/black"
@@ -25,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="9dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="cursive"
         android:text="@string/regw"
         android:textColor="@color/black"
@@ -60,9 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
-
         android:hint="@string/enph"
-        android:inputType="phone" />
+        android:inputType="phone"/>
 
     <EditText
 
@@ -97,4 +98,3 @@
 
 
 </LinearLayout>
-

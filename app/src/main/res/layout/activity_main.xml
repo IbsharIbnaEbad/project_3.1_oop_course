@@ -8,7 +8,8 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-
+    android:background="@drawable/img_background"
+    android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
 
 
@@ -28,31 +29,13 @@
 
         />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/enUsr"
-        android:inputType="text"
-        android:id="@+id/edtid"
-        />
 
-    <EditText
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/enPass"
-        android:inputType="number"
-        android:id="@+id/edtpass"
-
-        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#2196F3"
-        android:text="Login"
+        android:text="Sign In"
         android:textSize="20sp"
         android:id="@+id/btnlog"
         />
@@ -61,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#2196F3"
-        android:text="Register "
+        android:text="Sign Up "
         android:textSize="20sp"
         android:id="@+id/btnreg"
         />

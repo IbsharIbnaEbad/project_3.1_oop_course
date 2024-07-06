@@ -1,3 +1,4 @@
+/*
 package com.example.myapplication;
 
 import androidx.room.ColumnInfo;
@@ -7,38 +8,39 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "users")
 public class usersinfo {
+
     @PrimaryKey(autoGenerate = true)
     private int id;
+
     @ColumnInfo(name = "password")
-    private int password;
-    @ColumnInfo(name = "cpassword")
-    private int cpassword;
-    @ColumnInfo(name = "fristname")
-    private String fristname;
+    private String password;
+
+    @ColumnInfo(name = "firstname")
+    private String firstname;
+
     @ColumnInfo(name = "lastname")
     private String lastname;
+
     @ColumnInfo(name = "phonenumber")
     private int phonenumber;
 
-    usersinfo(String fristname, String lastname) {
-        this.id = id;
-        this.fristname = fristname;
+    public usersinfo(String firstname, String lastname, String password, int phonenumber) {
+
+        this.firstname = firstname;
         this.lastname = lastname;
         this.password = password;
-        this.cpassword = cpassword;
+
         this.phonenumber = phonenumber;
 
     }
 
     @Ignore
-    usersinfo(String fristname, String lastname, int password, int phonenumber, int cpassword) {
-
-        this.fristname = fristname;
+    public usersinfo(int id, String firstname, String lastname, String password, int phonenumber) {
+        this.id = id;
+        this.firstname = firstname;
         this.lastname = lastname;
         this.password = password;
-        this.cpassword = cpassword;
         this.phonenumber = phonenumber;
-
     }
 
     public int getId() {
@@ -49,28 +51,12 @@ public class usersinfo {
         this.id = id;
     }
 
-    public int getPassword() {
-        return password;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setPassword(int password) {
-        this.password = password;
-    }
-
-    public int getCpassword() {
-        return cpassword;
-    }
-
-    public void setCpassword(int cpassword) {
-        this.cpassword = cpassword;
-    }
-
-    public String getFristname() {
-        return fristname;
-    }
-
-    public void setFristname(String fristname) {
-        this.fristname = fristname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
     public String getLastname() {
@@ -81,6 +67,28 @@ public class usersinfo {
         this.lastname = lastname;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    */
+/*public int getCpassword() {
+        return cpassword;
+    }
+
+    public void setCpassword(int cpassword) {
+        this.cpassword = cpassword;
+    }
+
+*//*
+
+
+
     public int getPhonenumber() {
         return phonenumber;
     }
@@ -88,4 +96,4 @@ public class usersinfo {
     public void setPhonenumber(int phonenumber) {
         this.phonenumber = phonenumber;
     }
-}
+}*/

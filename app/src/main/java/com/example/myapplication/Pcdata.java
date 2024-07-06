@@ -1,3 +1,4 @@
+/*
 package com.example.myapplication;
 
 import android.content.ContentValues;
@@ -12,6 +13,7 @@ import androidx.room.RoomDatabase;
 
 @Database(entities = usersinfo.class, exportSchema = false, version = 1)
 public abstract class Pcdata extends RoomDatabase {
+
     private static final String Databasename = "usersdb";
     private static Pcdata instance;
 
@@ -24,11 +26,13 @@ public abstract class Pcdata extends RoomDatabase {
         }
         return instance;
     }
+
     public abstract userinfoDao userinfoDao();
 
 }
 
-    /*public class Pcdata extends SQLiteOpenHelper {
+    */
+/*public class Pcdata extends SQLiteOpenHelper {
     private static final String Databasename = "contacts";
     private static final int Database_ver = 1;
     private static final String Table_contracts = "contacts";
@@ -62,5 +66,3 @@ SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values
 db.insert(Table_contracts,null,)
     }*/
-
-
