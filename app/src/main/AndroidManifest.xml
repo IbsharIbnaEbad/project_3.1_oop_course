@@ -13,6 +13,24 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Item_stockk"
+            android:exported="false" />
+        <activity
+            android:name=".Item_stock_List"
+            android:exported="false" />
+        <activity
+            android:name=".Update_Stock"
+            android:exported="false" />
+        <activity
+            android:name=".Delete_Stock"
+            android:exported="false" />
+        <activity
+            android:name=".Insert_Stock"
+            android:exported="false" />
+        <activity
+            android:name=".admin_pc"
+            android:exported="false" />
+        <activity
             android:name=".recycleviewone"
             android:exported="false" />
         <activity

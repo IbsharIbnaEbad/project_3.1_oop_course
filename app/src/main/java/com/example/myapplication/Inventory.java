@@ -49,29 +49,25 @@ public class Inventory extends AppCompatActivity {
                 String username = edtfn.getText().toString();
                 String password = edtpass.getText().toString();
 
-                if (username.isEmpty() || password.isEmpty())
-                {
-                    Toast.makeText(Inventory.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                if (username.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(Inventory.this, "fill the data", Toast.LENGTH_SHORT).show();
                 }
-
-                else
-
-                {
-                    DataBaseHelper dbhelper = new DataBaseHelper(Inventory.this);
-                    boolean result = dbhelper.checkusrbyusername(username, password);
-
-
-                    if (result)
-
-                    {
-                        Toast.makeText(Inventory.this, "Welcome", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Inventory.this, recycleviewone.class);  // Changed to Menu.class
+                else {
+                    if (username.equals("pcplus") && password.equals("1")) {
+                        Intent intent = new Intent(Inventory.this, admin_pc.class);
                         startActivity(intent);
                     }
+                    else {
+                        DataBaseHelper dbHelper = new DataBaseHelper(Inventory.this);
+                        boolean result = dbHelper.checkusrbyusername(username, password);
 
-                    else
-                    {
-                        Toast.makeText(Inventory.this, "Wrong credentials", Toast.LENGTH_SHORT).show();
+                        if (result) {
+                            Toast.makeText(Inventory.this, "Hello!", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(Inventory.this, Item_stock_List.class);  // Changed to Menu.class
+                            startActivity(intent);
+                        } else {
+                            Toast.makeText(Inventory.this, "Invalid credentials!", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }
             }
